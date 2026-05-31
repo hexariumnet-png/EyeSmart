@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>👁️ EyeSmart, Panduan Kesehatan Mata Digital untuk Remaja</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <div class="logo-icon">👁️</div>
+    <span class="logo-text">EyeSmart</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero"       class="nav-link active">Home</a></li>
+    <li><a href="#kasus"      class="nav-link">Kasus Nyata</a></li>
+    <li><a href="#data"       class="nav-link">Data</a></li>
+    <li><a href="#masalah"    class="nav-link">Dampak</a></li>
+    <li><a href="#aturan20"   class="nav-link">20-20-20</a></li>
+    <li><a href="#tips"       class="nav-link">Tips</a></li>
+    <li><a href="#bahaya"     class="nav-link">Tanda Bahaya</a></li>
+    <li><a href="#quiz"       class="nav-link">Quiz</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-shapes">
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+    <div class="shape s4"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Teen Health Guide 2026
+    </div>
+    <h1 class="hero-title">
+      Matamu Berharga,<br/>
+      <span class="text-accent">Jaga Sekarang!</span>
+    </h1>
+    <p class="hero-desc">
+      Saat ini, kehidupan remaja hampir tidak bisa dipisahkan dari layar. Mulai dari belajar, hiburan, komunikasi, hingga mencari informasi, semuanya terhubung dengan perangkat digital. Namun, penggunaan yang terlalu lama tanpa batas dapat memengaruhi kesehatan mata. Berdasarkan data <strong>Kementerian Kesehatan Republik Indonesia (2024)</strong>, sekitar <strong>10%</strong> anak usia sekolah (5–19 tahun) di Indonesia mengalami gangguan penglihatan, dan kebiasaan menatap layar dalam durasi panjang adalah salah satu faktor yang berperan. Menjaga kesehatan mata sejak dini menjadi langkah penting untuk mendukung kualitas hidup sehari-hari.
+    </p>
+    <div class="hero-cta">
+      <a href="#kasus"    class="btn btn-primary">Lihat Kasus Nyata 📰</a>
+      <a href="#aturan20" class="btn btn-outline">Pelajari 20-20-20 ⏱️</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hstat-num"><span class="count" data-to="10">0</span>%</div>
+        <div class="hstat-lbl">Anak sekolah Indonesia alami gangguan penglihatan <em>(Kemenkes RI)</em></div>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <div class="hstat-num"><span class="count" data-to="3">0</span>.6 jt</div>
+        <div class="hstat-lbl">Anak Indonesia alami kelainan refraksi <em>(Kemenkes RI)</em></div>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <div class="hstat-num"><span class="count" data-to="40">0</span>%</div>
+        <div class="hstat-lbl">Prevalensi rabun jauh anak Jakarta — naik dari 10% <em>(Perdami/Kompas.id)</em></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero SVG Illustration -->
+  <div class="hero-visual">
+    <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+      <!-- Background circle -->
+      <circle cx="210" cy="210" r="190" fill="#FFF7ED" opacity="0.7"/>
+
+      <!-- Phone/Laptop glow -->
+      <ellipse cx="210" cy="310" rx="90" ry="12" fill="#FF6B6B" opacity="0.15"/>
+
+      <!-- Laptop body -->
+      <rect x="115" y="230" width="190" height="120" rx="10" fill="#FFD93D" stroke="#FF6B6B" stroke-width="3"/>
+      <rect x="125" y="240" width="170" height="95" rx="6" fill="#FFF" opacity="0.9"/>
+      <!-- Laptop screen content lines -->
+      <rect x="135" y="252" width="80" height="7" rx="3" fill="#FF6B6B" opacity="0.5"/>
+      <rect x="135" y="265" width="120" height="5" rx="2" fill="#4ECDC4" opacity="0.5"/>
+      <rect x="135" y="276" width="100" height="5" rx="2" fill="#4ECDC4" opacity="0.4"/>
+      <rect x="135" y="287" width="130" height="5" rx="2" fill="#FFD93D" opacity="0.6"/>
+      <rect x="135" y="298" width="90" height="5" rx="2" fill="#4ECDC4" opacity="0.4"/>
+      <!-- Laptop base -->
+      <rect x="100" y="350" width="220" height="12" rx="6" fill="#FFC107" stroke="#FF6B6B" stroke-width="2"/>
+
+      <!-- Big Eye illustration -->
+      <!-- Eye white -->
+      <ellipse cx="210" cy="145" rx="110" ry="65" fill="white" stroke="#FF6B6B" stroke-width="4"/>
+      <!-- Iris -->
+      <circle cx="210" cy="145" r="45" fill="#4ECDC4"/>
+      <!-- Iris detail -->
+      <circle cx="210" cy="145" r="45" fill="url(#irisGrad)"/>
+      <!-- Pupil -->
+      <circle cx="210" cy="145" r="24" fill="#1a1a2e"/>
+      <!-- Shine -->
+      <circle cx="222" cy="133" r="8" fill="white" opacity="0.9"/>
+      <circle cx="198" cy="152" r="4" fill="white" opacity="0.5"/>
+      <!-- Eyelashes top -->
+      <line x1="140" y1="115" x2="133" y2="98"  stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="163" y1="100" x2="160" y2="82"  stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="188" y1="92"  x2="187" y2="74"  stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="213" y1="90"  x2="214" y2="72"  stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="238" y1="93"  x2="241" y2="75"  stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="260" y1="101" x2="265" y2="84"  stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="278" y1="116" x2="285" y2="100" stroke="#FF6B6B" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Eyelashes bottom -->
+      <line x1="158" y1="187" x2="153" y2="200" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="185" y1="197" x2="183" y2="212" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="213" y1="200" x2="213" y2="215" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="240" y1="196" x2="243" y2="211" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="263" y1="186" x2="268" y2="200" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Floating elements -->
+      <!-- Warning sign -->
+      <g transform="translate(42,60)" class="float-el f1">
+        <circle cx="28" cy="28" r="24" fill="#FF6B6B" opacity="0.9"/>
+        <text x="28" y="35" text-anchor="middle" font-size="22" fill="white">⚠️</text>
+      </g>
+      <!-- Clock -->
+      <g transform="translate(330,50)" class="float-el f2">
+        <circle cx="28" cy="28" r="24" fill="#FFD93D" opacity="0.9"/>
+        <text x="28" y="35" text-anchor="middle" font-size="22" fill="white">⏰</text>
+      </g>
+      <!-- Heart -->
+      <g transform="translate(358,175)" class="float-el f3">
+        <circle cx="24" cy="24" r="20" fill="#FF85A1" opacity="0.9"/>
+        <text x="24" y="31" text-anchor="middle" font-size="18" fill="white">❤️</text>
+      </g>
+      <!-- Sun/outdoor -->
+      <g transform="translate(28,190)" class="float-el f4">
+        <circle cx="24" cy="24" r="20" fill="#4ECDC4" opacity="0.9"/>
+        <text x="24" y="31" text-anchor="middle" font-size="18" fill="white">🌿</text>
+      </g>
+
+      <!-- Screen time warning bubble -->
+      <g transform="translate(68,310)">
+        <rect width="130" height="42" rx="21" fill="#FF6B6B"/>
+        <text x="65" y="19" text-anchor="middle" font-size="11" fill="white" font-weight="700">📱 7+ jam/hari</text>
+        <text x="65" y="33" text-anchor="middle" font-size="10" fill="white" opacity="0.9">rata-rata screen time</text>
+      </g>
+      <g transform="translate(222,310)">
+        <rect width="130" height="42" rx="21" fill="#4ECDC4"/>
+        <text x="65" y="19" text-anchor="middle" font-size="11" fill="white" font-weight="700">✅ Aturan 20-20-20</text>
+        <text x="65" y="33" text-anchor="middle" font-size="10" fill="white" opacity="0.9">solusi dari AOA & AAO</text>
+      </g>
+
+      <!-- Gradient defs -->
+      <defs>
+        <radialGradient id="irisGrad" cx="40%" cy="35%" r="60%">
+          <stop offset="0%" stop-color="#45E5D6" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#0DB8A6" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== KASUS NYATA ===== -->
+<section class="section kasus-section" id="kasus">
+  <div class="section-label">📰 Fakta & Kasus Nyata</div>
+  <h2 class="section-title">Ini Bukan Sekadar Teori, <br/><span class="text-accent">Ini Terjadi di Indonesia 🇮🇩!</span></h2>
+  <p class="kasus-note">Sumber-sumber berikut berasal dari berbagai tahun dan tetap relevan, karena tren masalah kesehatan mata pada remaja Indonesia terus meningkat hingga 2026.</p>
+
+  <!-- Article card utama -->
+  <div class="article-card">
+    <div class="article-badge">Sumber: Kemenkes RI · Oktober 2024 <span class="badge-year-note">(dikompilasi EyeSmart 2026)</span></div>
+    <div class="article-body">
+      <div class="article-illo">
+        <svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="220" height="200" rx="16" fill="#FFF0F3"/>
+          <!-- Map Indonesia simplified -->
+          <ellipse cx="80" cy="110" rx="55" ry="28" fill="#FF6B6B" opacity="0.25" transform="rotate(-8,80,110)"/>
+          <ellipse cx="145" cy="105" rx="42" ry="22" fill="#FF6B6B" opacity="0.25" transform="rotate(-5,145,105)"/>
+          <ellipse cx="175" cy="120" rx="25" ry="14" fill="#FF6B6B" opacity="0.2" transform="rotate(-3,175,120)"/>
+          <!-- Children figures -->
+          <circle cx="70" cy="75" r="14" fill="#FF6B6B"/>
+          <rect x="61" y="91" width="18" height="22" rx="5" fill="#FFD93D"/>
+          <rect x="63" y="113" width="6" height="16" rx="3" fill="#FF85A1"/>
+          <rect x="72" y="113" width="6" height="16" rx="3" fill="#FF85A1"/>
+          <!-- Glasses on child -->
+          <rect x="62" y="71" width="8" height="6" rx="3" fill="none" stroke="white" stroke-width="1.5"/>
+          <rect x="73" y="71" width="8" height="6" rx="3" fill="none" stroke="white" stroke-width="1.5"/>
+          <line x1="70" y1="74" x2="73" y2="74" stroke="white" stroke-width="1.5"/>
+
+          <circle cx="145" cy="72" r="14" fill="#4ECDC4"/>
+          <rect x="136" y="88" width="18" height="22" rx="5" fill="#FFD93D"/>
+          <rect x="138" y="110" width="6" height="16" rx="3" fill="#45B7D1"/>
+          <rect x="147" y="110" width="6" height="16" rx="3" fill="#45B7D1"/>
+
+          <circle cx="185" cy="78" r="14" fill="#FF85A1"/>
+          <rect x="176" y="94" width="18" height="22" rx="5" fill="#4ECDC4"/>
+          <rect x="178" y="116" width="6" height="16" rx="3" fill="#FF6B6B"/>
+          <rect x="187" y="116" width="6" height="16" rx="3" fill="#FF6B6B"/>
+          <!-- HP di tangan -->
+          <rect x="189" y="100" width="10" height="14" rx="2" fill="#1a1a2e" opacity="0.7"/>
+          <rect x="190" y="102" width="8" height="10" rx="1" fill="#4ECDC4" opacity="0.8"/>
+
+          <!-- Stats labels -->
+          <rect x="10" y="148" width="95" height="38" rx="8" fill="#FF6B6B"/>
+          <text x="57" y="163" text-anchor="middle" font-size="11" fill="white" font-weight="700">3,6 juta anak</text>
+          <text x="57" y="177" text-anchor="middle" font-size="9.5" fill="white">kelainan refraksi</text>
+          <rect x="114" y="148" width="95" height="38" rx="8" fill="#4ECDC4"/>
+          <text x="161" y="163" text-anchor="middle" font-size="11" fill="white" font-weight="700">10% usia sekolah</text>
+          <text x="161" y="177" text-anchor="middle" font-size="9.5" fill="white">gangguan penglihatan</text>
+        </svg>
+      </div>
+      <div class="article-text">
+        <h3>Kemenkes RI: Gangguan Penglihatan Anak Indonesia Jadi Masalah Nasional</h3>
+        <p>Gangguan penglihatan bukan hanya urusan orang dewasa. Berbagai faktor seperti kebiasaan digital yang tidak terkontrol dan kurangnya waktu istirahat mata membuat semakin banyak anak dan remaja mengalami penurunan kualitas penglihatan di usia yang semakin muda.</p>
+        <p class="article-quote">
+          Sebanyak <strong>3,6 juta anak</strong> di Indonesia mengalami kelainan refraksi seperti rabun jauh atau rabun dekat, dan sekitar <strong>10% anak usia sekolah</strong> di Indonesia mengalami gangguan penglihatan, menurut Kementerian Kesehatan RI. Kondisi ini menegaskan pentingnya memperhatikan kesehatan mata sejak usia dini.
+        </p>
+        <p class="article-meta">— Kemenkes RI · Hari Penglihatan Sedunia, Oktober 2024</p>
+        <a class="article-link" href="https://kemkes.go.id/id/sayangi-mata-anak-sedari-dini-untuk-investasi-masa-depan" target="_blank">Baca sumber asli di kemkes.go.id →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kasus 2 & 3 -->
+  <div class="mini-cases">
+    <div class="mini-case">
+      <div class="mini-case-icon">📊</div>
+      <div class="mini-case-source">Perdami / Proyek Visi SPGR · dikutip Kompas.id, 2024</div>
+      <h4>Miopia Anak Jakarta Naik 4× Lipat</h4>
+      <p>Menurut data yang dikumpulkan Perdami melalui Proyek Visi SPGR, prevalensi miopia pada siswa sekolah dasar di Jakarta meningkat dari sekitar <strong>10%</strong> menjadi <strong>40%</strong> dalam beberapa tahun terakhir. Peningkatan ini diduga berkaitan erat dengan perubahan pola hidup modern, termasuk meningkatnya aktivitas jarak dekat seperti penggunaan perangkat digital, serta berkurangnya waktu yang dihabiskan untuk melihat objek jauh di luar ruangan.</p>
+      <a href="https://www.kompas.id/artikel/kesehatan-penglihatan-untuk-indonesia-emas-2045" target="_blank" class="mini-link">Sumber: Kompas.id →</a>
+    </div>
+    <div class="mini-case">
+      <div class="mini-case-icon">🔬</div>
+      <div class="mini-case-source">PrimaKu.com · 2025 (mengutip Pavel et al.)</div>
+      <h4>55–81% Pengguna Layar Alami Gejala Digital Eye Strain</h4>
+      <p>Setelah menatap layar dalam waktu lama, banyak orang merasakan mata lelah, dan kondisi ini bisa menjadi indikasi dari sindrom penglihatan komputer (CVS) atau Digital Eye Strain (DES). Gejalanya beragam: mata terasa lelah atau berat, kering, perih, penglihatan buram sementara, sakit kepala, hingga sulit fokus setelah penggunaan layar yang berkepanjangan. Penelitian yang dikutip sumber kesehatan anak Indonesia menunjukkan bahwa sekitar <strong>55–81%</strong> pengguna layar aktif berpotensi mengalami gejala ini.</p>
+      <a href="https://primaku.com/articles/dampak-screen-time-berkepanjangan-terhadap-gangguan-mata-1739526846648" target="_blank" class="mini-link">Sumber: PrimaKu.com →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHARTS / DATA VISUALISASI ===== -->
+<section class="section charts-section" id="data">
+  <div class="section-label">📊 Data & Statistik</div>
+  <h2 class="section-title">Angka-Angka yang <span class="text-accent">Harus Kamu Tahu</span></h2>
+  <p class="section-desc">Visualisasi data dari Kemenkes RI, Perdami, AAO, Vision Council, dan WHO, semua bersumber dari publikasi dan lembaga terverifikasi.</p>
+
+  <div class="charts-grid">
+
+    <!-- Chart 1: Miopia prevalence bar chart -->
+    <div class="chart-card reveal">
+      <div class="chart-title">📈 Lonjakan Miopia Anak Sekolah Jakarta</div>
+      <div class="chart-subtitle">Perdami / Vision Project SPGR · 2018 vs 2024</div>
+      <div class="bar-chart">
+        <div class="bar-group">
+          <div class="bar-wrap">
+            <div class="bar-label-top">10%</div>
+            <div class="bar bar-old" data-pct="10" style="height:0%">
+              <div class="bar-inner"></div>
+            </div>
+          </div>
+          <div class="bar-xlbl">Riskesdas 2018</div>
+        </div>
+        <div class="bar-vs">→</div>
+        <div class="bar-group">
+          <div class="bar-wrap">
+            <div class="bar-label-top bar-label-accent">40%</div>
+            <div class="bar bar-new" data-pct="40" style="height:0%">
+              <div class="bar-inner"></div>
+            </div>
+          </div>
+          <div class="bar-xlbl">Vision Project 2024</div>
+        </div>
+      </div>
+      <div class="chart-note">⚠️ Naik <strong>4× lipat</strong> dalam kurang lebih 6 tahun, peningkatan paparan layar digital disebut sebagai salah satu faktor klinis utama</div>
+      <div class="chart-src">📌 Perdami & Kompas.id (2024)</div>
+    </div>
+
+    <!-- Chart 2: DES donut -->
+    <div class="chart-card reveal">
+      <div class="chart-title">😵 Berapa Banyak Pengguna Layar Alami DES?</div>
+      <div class="chart-subtitle">Digital Eye Strain / Computer Vision Syndrome</div>
+      <div class="donut-wrap">
+        <svg viewBox="0 0 160 160" class="donut-svg" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="80" cy="80" r="58" fill="none" stroke="rgba(255,107,107,0.12)" stroke-width="22"/>
+          <!-- DES segment ~68% avg of 55-81% -->
+          <circle cx="80" cy="80" r="58" fill="none" stroke="url(#desGrad)" stroke-width="22"
+            stroke-dasharray="246.6 364.4" stroke-dashoffset="91.1"
+            class="donut-ring" data-dash="246.6" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="desGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FF6B6B"/>
+              <stop offset="100%" stop-color="#FF85A1"/>
+            </linearGradient>
+          </defs>
+          <text x="80" y="70" text-anchor="middle" font-size="24" font-weight="800" fill="#FF6B6B" font-family="Sora, sans-serif">55–</text>
+          <text x="80" y="96" text-anchor="middle" font-size="24" font-weight="800" fill="#FF6B6B" font-family="Sora, sans-serif">81%</text>
+        </svg>
+        <div class="donut-legend">
+          <div class="dleg-item"><span class="dleg-dot" style="background:#FF6B6B"></span>Mengalami minimal 1 gejala DES</div>
+          <div class="dleg-item"><span class="dleg-dot" style="background:rgba(255,107,107,0.15)"></span>Tidak terpengaruh secara signifikan</div>
+        </div>
+      </div>
+      <div class="chart-note">Gejala: mata lelah, perih, kabur sementara, sakit kepala</div>
+      <div class="chart-src">📌 Pavel et al., dikutip PrimaKu.com (2025); Vision Council (2024)</div>
+    </div>
+
+    <!-- Chart 3: Screen time horizontal bars -->
+    <div class="chart-card reveal">
+      <div class="chart-title">📱 Rata-rata Screen Time Harian</div>
+      <div class="chart-subtitle">Perbandingan kelompok usia — Indonesia & global</div>
+      <div class="hbar-list">
+        <div class="hbar-item">
+          <div class="hbar-lbl">Remaja 13–18 thn (Indonesia)</div>
+          <div class="hbar-track"><div class="hbar-fill hb1" data-w="87" style="width:0%"><span>7+ jam</span></div></div>
+        </div>
+        <div class="hbar-item">
+          <div class="hbar-lbl">Anak 10–12 thn</div>
+          <div class="hbar-track"><div class="hbar-fill hb2" data-w="60" style="width:0%"><span>5 jam</span></div></div>
+        </div>
+        <div class="hbar-item">
+          <div class="hbar-lbl">Rekomendasi WHO remaja</div>
+          <div class="hbar-track"><div class="hbar-fill hb3" data-w="24" style="width:0%"><span>≤2 jam</span></div></div>
+        </div>
+        <div class="hbar-item">
+          <div class="hbar-lbl">Rekomendasi AAO (rekreasional)</div>
+          <div class="hbar-track"><div class="hbar-fill hb4" data-w="24" style="width:0%"><span>≤2 jam</span></div></div>
+        </div>
+      </div>
+      <div class="chart-note">Remaja Indonesia rata-rata menghabiskan <strong>3–4× lipat</strong> waktu layar yang direkomendasikan</div>
+      <div class="chart-src">📌 WHO (2019), AOA, Kemenkes RI (2024)</div>
+    </div>
+
+    <!-- Chart 4: Blinking frequency -->
+    <div class="chart-card reveal">
+      <div class="chart-title">👁️ Frekuensi Kedip: Normal vs Menatap Layar</div>
+      <div class="chart-subtitle">Per menit · Berdasarkan AAO EyeWiki</div>
+      <div class="blink-compare">
+        <div class="blink-item">
+          <div class="blink-eyes" id="blinkNormal">
+            <div class="blink-eye-icon">👁️</div>
+          </div>
+          <div class="blink-num normal-blink">15–17×</div>
+          <div class="blink-lbl">Normal<br/>(tanpa layar)</div>
+          <div class="blink-bar-h"><div class="blink-fill bf-green" data-w="100" style="width:0%"></div></div>
+        </div>
+        <div class="blink-vs">VS</div>
+        <div class="blink-item">
+          <div class="blink-eyes">
+            <div class="blink-eye-icon blink-strained">😑</div>
+          </div>
+          <div class="blink-num strain-blink">~5×</div>
+          <div class="blink-lbl">Menatap<br/>layar</div>
+          <div class="blink-bar-h"><div class="blink-fill bf-red" data-w="30" style="width:0%"></div></div>
+        </div>
+      </div>
+      <div class="chart-note">Penurunan frekuensi kedip hingga <strong>sepertiga dari normal</strong> menyebabkan mata kering, iritasi, dan gejala DES</div>
+      <div class="chart-src">📌 AAO EyeWiki; Heffington's Eye Center</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DAMPAK ===== -->
+<section class="section masalah-section" id="masalah">
+  <div class="section-label">⚡ Dampak Ilmiah</div>
+  <h2 class="section-title">Apa yang Terjadi pada Matamu<br/><span class="text-accent">Saat Layar Terlalu Lama?</span></h2>
+  <p class="section-desc">Berdasarkan panduan AAO (American Academy of Ophthalmology) dan penelitian yang dipublikasikan dalam jurnal ilmiah terverifikasi, berikut adalah dampak nyata yang bisa terjadi pada mata ketika layar digunakan tanpa batas waktu yang sehat.</p>
+
+  <div class="impact-grid">
+    <div class="impact-card ic1 reveal">
+      <div class="impact-svg">
+        <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="38" r="28" fill="#FF6B6B" opacity="0.15"/>
+          <ellipse cx="50" cy="38" rx="38" ry="22" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+          <circle cx="50" cy="38" r="14" fill="#FF6B6B" opacity="0.3"/>
+          <circle cx="50" cy="38" r="7" fill="#FF6B6B"/>
+          <!-- Zigzag lines = strain -->
+          <path d="M20 20 L28 14 L36 20 L44 14" stroke="#FF6B6B" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M56 14 L64 20 L72 14 L80 20" stroke="#FF6B6B" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Stars/pain -->
+          <text x="12" y="64" font-size="11">⭐</text>
+          <text x="74" y="64" font-size="11">⭐</text>
+        </svg>
+      </div>
+      <h3>Digital Eye Strain (DES)</h3>
+      <p>Menggunakan layar dalam waktu lama tidak selalu langsung merusak mata, tetapi dapat menimbulkan ketegangan dan mengganggu fungsi normal mata. Saat menatap layar, mata terus fokus pada objek yang relatif dekat sehingga otot mata bekerja lebih lama dari biasanya. Pada saat yang sama, frekuensi berkedip cenderung menurun sehingga mata kehilangan sebagian kelembapan alaminya. Akibatnya, muncul berbagai keluhan seperti mata terasa berat, perih, kering, penglihatan buram sementara, sulit fokus, hingga rasa tidak nyaman setelah belajar atau bermain perangkat digital dalam waktu panjang.</p>
+      <div class="impact-fact">💡 Lebih dari 65% pengguna layar aktif mengalami minimal satu gejala DES (Vision Council, 2024)</div>
+    </div>
+
+    <div class="impact-card ic2 reveal">
+      <div class="impact-svg">
+        <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+          <!-- Moon -->
+          <path d="M55 15 A25 25 0 1 0 55 65 A18 18 0 1 1 55 15Z" fill="#FFD93D" opacity="0.7"/>
+          <!-- Stars -->
+          <text x="18" y="28" font-size="12">✨</text>
+          <text x="70" y="22" font-size="10">✨</text>
+          <text x="75" y="55" font-size="9">✨</text>
+          <!-- Z Z Z -->
+          <text x="58" y="42" font-size="16" fill="#FF6B6B" font-weight="900" opacity="0.8">z</text>
+          <text x="48" y="33" font-size="12" fill="#FF6B6B" font-weight="900" opacity="0.6">z</text>
+          <text x="64" y="28" font-size="10" fill="#FF6B6B" font-weight="900" opacity="0.5">z</text>
+        </svg>
+      </div>
+      <h3>Gangguan Tidur &amp; Ritme Sirkadian</h3>
+      <p>Cahaya biru yang dipancarkan layar mengurangi produksi hormon melatonin, yaitu hormon yang dibuat tubuh untuk mempersiapkan diri tidur. Paparan layar dalam dua jam sebelum tidur dapat menggeser waktu tidur secara signifikan, menurut Sleep Research Society. Dibandingkan orang dewasa, remaja dan anak muda lebih rentan terhadap dampak ini karena lensa mata yang lebih muda lebih sensitif terhadap cahaya gelombang pendek.</p>
+      <div class="impact-fact">💡 Paparan layar dalam 2 jam sebelum tidur dapat menggeser waktu tidur secara signifikan — Sleep Research Society</div>
+    </div>
+
+    <div class="impact-card ic3 reveal">
+      <div class="impact-svg">
+        <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+          <!-- Eye looking near -->
+          <ellipse cx="50" cy="40" rx="36" ry="20" fill="none" stroke="#4ECDC4" stroke-width="3"/>
+          <circle cx="50" cy="40" r="13" fill="#4ECDC4" opacity="0.4"/>
+          <circle cx="50" cy="40" r="7" fill="#4ECDC4"/>
+          <!-- Phone near -->
+          <rect x="62" y="28" width="22" height="28" rx="3" fill="#FFD93D" stroke="#4ECDC4" stroke-width="2"/>
+          <rect x="64" y="31" width="18" height="20" rx="2" fill="#fff" opacity="0.8"/>
+          <!-- Arrow showing distance -->
+          <line x1="57" y1="50" x2="62" y2="50" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="2,2"/>
+          <!-- Glasses -->
+          <rect x="8" y="36" width="12" height="8" rx="4" fill="none" stroke="#FF6B6B" stroke-width="2"/>
+          <rect x="22" y="36" width="12" height="8" rx="4" fill="none" stroke="#FF6B6B" stroke-width="2"/>
+          <line x1="20" y1="40" x2="22" y2="40" stroke="#FF6B6B" stroke-width="2"/>
+          <line x1="8" y1="40" x2="5" y2="42" stroke="#FF6B6B" stroke-width="2"/>
+          <line x1="34" y1="40" x2="37" y2="42" stroke="#FF6B6B" stroke-width="2"/>
+        </svg>
+      </div>
+      <h3>Risiko Miopia (Rabun Jauh) Dini</h3>
+      <p>Studi jurnal <em>Ophthalmology</em> (AAO) menunjukkan bahwa aktivitas jarak dekat seperti menatap layar berkontribusi pada peningkatan prevalensi miopia di seluruh dunia. Di Indonesia, data Perdami mencatat prevalensi miopia anak Jakarta melonjak dari 10% menjadi 40% dalam beberapa tahun terakhir. Berkurangnya waktu melihat objek jauh di luar ruangan turut memperburuk kondisi ini pada anak-anak usia sekolah.</p>
+      <div class="impact-fact">💡 3,6 juta anak Indonesia sudah mengalami kelainan refraksi seperti rabun jauh atau rabun dekat (Kemenkes RI, 2024)</div>
+    </div>
+
+    <div class="impact-card ic4 reveal">
+      <div class="impact-svg">
+        <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+          <!-- Droplets -->
+          <ellipse cx="50" cy="44" rx="36" ry="20" fill="none" stroke="#45B7D1" stroke-width="3"/>
+          <circle cx="50" cy="44" r="13" fill="#45B7D1" opacity="0.3"/>
+          <circle cx="50" cy="44" r="7" fill="#45B7D1"/>
+          <!-- Dry cracks -->
+          <path d="M36 30 L40 38" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 26 L57 35" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"/>
+          <!-- Small water drop = few blinks -->
+          <path d="M76 18 C76 18 72 24 72 27 C72 30 74 32 76 32 C78 32 80 30 80 27 C80 24 76 18 76 18Z" fill="#45B7D1" opacity="0.5"/>
+          <text x="12" y="74" font-size="10">😶</text>
+          <text x="30" y="74" font-size="10">15x/mnt</text>
+          <text x="58" y="74" font-size="10">5x/mnt</text>
+        </svg>
+      </div>
+      <h3>Kelelahan &amp; Penurunan Produktivitas</h3>
+      <p>Penggunaan layar yang terlalu lama membuat tubuh dan mata bekerja terus-menerus tanpa waktu pemulihan yang cukup. Akibatnya, seseorang dapat mengalami kehilangan fokus, merasa mengantuk, kesulitan berkonsentrasi saat belajar, atau tidak nyaman saat membaca dan mengerjakan tugas. Memberi jeda secara rutin dan menjaga kebiasaan penggunaan layar yang sehat dapat membantu mempertahankan kenyamanan mata sekaligus mendukung produktivitas sehari-hari.</p>
+      <div class="impact-fact">💡 EyeWiki (AAO): latihan kedip secara sadar setiap 20 menit terbukti membantu meringankan gejala mata kering akibat layar</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ATURAN 20-20-20 ===== -->
+<section class="section rule-section" id="aturan20">
+  <div class="rule-deco-top"></div>
+  <div class="section-label">⏱️ Solusi Utama</div>
+  <h2 class="section-title">Aturan <span class="text-accent">20-20-20</span></h2>
+  <p class="section-desc">Direkomendasikan secara resmi oleh <strong>American Optometric Association (AOA)</strong> dan <strong>American Academy of Ophthalmology (AAO)</strong>, serta disebutkan langsung oleh <strong>Kemenkes RI</strong> pada Hari Penglihatan Sedunia 2024 sebagai langkah pencegahan untuk semua orang, masih menjadi panduan utama hingga 2026.</p>
+
+  <div class="rule-how">
+    <div class="rule-step rs1">
+      <div class="rule-num">20</div>
+      <div class="rule-icon-wrap">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="80">
+          <circle cx="40" cy="40" r="36" fill="#FFF0F3" stroke="#FF6B6B" stroke-width="3"/>
+          <!-- Clock face -->
+          <circle cx="40" cy="40" r="26" fill="white" stroke="#FFD93D" stroke-width="2"/>
+          <!-- Hour markers -->
+          <line x1="40" y1="17" x2="40" y2="22" stroke="#FF6B6B" stroke-width="2"/>
+          <line x1="63" y1="40" x2="58" y2="40" stroke="#FF6B6B" stroke-width="2"/>
+          <line x1="40" y1="63" x2="40" y2="58" stroke="#FF6B6B" stroke-width="2"/>
+          <line x1="17" y1="40" x2="22" y2="40" stroke="#FF6B6B" stroke-width="2"/>
+          <!-- Hands at 20-min position -->
+          <line x1="40" y1="40" x2="40" y2="22" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="40" y1="40" x2="55" y2="30" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="40" cy="40" r="3" fill="#FF6B6B"/>
+        </svg>
+      </div>
+      <h3>Menit</h3>
+      <p>Setiap <strong>20 menit</strong> menatap layar, berhenti sejenak. Durasi ini didasarkan pada riset manfaat jeda singkat-namun-sering, yang lebih efektif daripada istirahat panjang yang jarang. (AOA)</p>
+    </div>
+
+    <div class="rule-arrow">
+      <svg viewBox="0 0 60 30" width="60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 15 L45 15" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+        <path d="M38 8 L50 15 L38 22" stroke="#FFD93D" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="rule-step rs2">
+      <div class="rule-num">20</div>
+      <div class="rule-icon-wrap">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="80">
+          <circle cx="40" cy="40" r="36" fill="#E8FAF9" stroke="#4ECDC4" stroke-width="3"/>
+          <!-- Window/view to outside -->
+          <rect x="18" y="20" width="44" height="32" rx="4" fill="#E8FAF9" stroke="#4ECDC4" stroke-width="2"/>
+          <!-- Mountain/distant view -->
+          <path d="M22 48 L32 30 L42 48Z" fill="#4ECDC4" opacity="0.5"/>
+          <path d="M34 48 L46 28 L58 48Z" fill="#4ECDC4" opacity="0.7"/>
+          <!-- Sky -->
+          <circle cx="50" cy="34" r="7" fill="#FFD93D" opacity="0.8"/>
+          <!-- Distance arrows -->
+          <path d="M20 60 L60 60" stroke="#4ECDC4" stroke-width="2" stroke-dasharray="4,3"/>
+          <text x="35" y="74" text-anchor="middle" font-size="9" fill="#4ECDC4" font-weight="700">6 meter</text>
+        </svg>
+      </div>
+      <h3>Kaki (≈6 meter)</h3>
+      <p>Alihkan pandangan ke objek berjarak <strong>20 kaki (~6 m)</strong>. Melihat jauh membuat otot siliari (pengatur fokus mata) rileks dari posisi tegang akibat near work yang berkepanjangan. (AAO, EyeWiki)</p>
+    </div>
+
+    <div class="rule-arrow">
+      <svg viewBox="0 0 60 30" width="60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 15 L45 15" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+        <path d="M38 8 L50 15 L38 22" stroke="#FFD93D" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="rule-step rs3">
+      <div class="rule-num">20</div>
+      <div class="rule-icon-wrap">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="80">
+          <circle cx="40" cy="40" r="36" fill="#FFF8E1" stroke="#FFD93D" stroke-width="3"/>
+          <!-- Blink eye -->
+          <ellipse cx="40" cy="38" rx="22" ry="13" fill="white" stroke="#FFD93D" stroke-width="2"/>
+          <circle cx="40" cy="38" r="8" fill="#4ECDC4"/>
+          <circle cx="40" cy="38" r="4" fill="#1a1a2e"/>
+          <circle cx="43" cy="35" r="2" fill="white"/>
+          <!-- Blink lines -->
+          <path d="M22 30 Q40 22 58 30" stroke="#FF6B6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Sparkles = refreshed -->
+          <text x="12" y="65" font-size="12">✨</text>
+          <text x="58" y="65" font-size="12">✨</text>
+        </svg>
+      </div>
+      <h3>Detik</h3>
+      <p>Tatap benda itu selama <strong>20 detik</strong>. Waktu ini cukup bagi otot mata berelaksasi dan frekuensi kedip kembali normal (15–17x/mnt), memulihkan lapisan air mata pelindung. (AAO, Heffington's Eye Center)</p>
+    </div>
+  </div>
+
+  <!-- Timer -->
+  <div class="timer-box">
+    <div class="timer-header">
+      <span>⏱️</span>
+      <h3>Coba Timer 20-20-20 Sekarang!</h3>
+    </div>
+    <p class="timer-subtitle">Mulai timer. Setiap 20 menit kamu akan diingatkan untuk istirahat mata selama 20 detik.</p>
+    <div class="timer-display">
+      <svg class="tsvg" viewBox="0 0 130 130" width="160" height="160">
+        <circle cx="65" cy="65" r="58" fill="#FFF0F3" stroke="#FFE0E6" stroke-width="4"/>
+        <circle cx="65" cy="65" r="58" fill="none" stroke="#FF6B6B" stroke-width="7"
+          stroke-linecap="round" stroke-dasharray="364.4" stroke-dashoffset="0"
+          id="timerRing" transform="rotate(-90 65 65)"/>
+      </svg>
+      <div class="timer-num" id="timerNum">20:00</div>
+    </div>
+    <div class="timer-msg" id="timerMsg">Siap memulai sesi belajar? 📚</div>
+    <div class="timer-btns">
+      <button class="btn btn-primary" id="timerStart">▶ Mulai</button>
+      <button class="btn btn-outline" id="timerReset">↺ Reset</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIPS ===== -->
+<section class="section tips-section" id="tips">
+  <div class="section-label">📱 Panduan Praktis</div>
+  <h2 class="section-title">Tips <span class="text-accent">Screen Time Sehat</span></h2>
+  <p class="section-desc">Berdasarkan rekomendasi AOA, AAO, WHO, dan Sleep Research Society. Panduan praktis ini dirancang khusus untuk mendukung kebiasaan digital yang lebih sehat bagi remaja.</p>
+
+  <div class="tips-grid">
+    <div class="tip-card reveal">
+      <div class="tip-card-header tc1">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" width="80">
+          <rect x="5" y="10" width="50" height="35" rx="4" fill="white" opacity="0.8"/>
+          <rect x="8" y="13" width="44" height="26" rx="3" fill="#4ECDC4" opacity="0.3"/>
+          <!-- Distance arrow -->
+          <line x1="60" y1="28" x2="72" y2="28" stroke="white" stroke-width="2" stroke-dasharray="3,2"/>
+          <text x="42" y="55" text-anchor="middle" font-size="10" fill="white" font-weight="700">40–70 cm</text>
+          <!-- Eye -->
+          <ellipse cx="72" cy="28" rx="7" ry="4" fill="none" stroke="white" stroke-width="1.5"/>
+          <circle cx="72" cy="28" r="2" fill="white"/>
+        </svg>
+        <span>Jarak Layar Ideal</span>
+      </div>
+      <div class="tip-card-body">
+        <p>Gunakan laptop atau komputer dengan jarak sekitar <strong>50–70 cm</strong> dari mata, dan untuk ponsel minimal <strong>40 cm</strong>. Posisikan layar sedikit di bawah garis pandang agar mata dan leher tidak cepat tegang selama sesi belajar atau bekerja yang panjang.</p>
+        <div class="tip-src">📌 <a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" class="src-link">American Optometric Association (AOA)</a></div>
+      </div>
+    </div>
+
+    <div class="tip-card reveal">
+      <div class="tip-card-header tc2">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" width="80">
+          <!-- Moon + sun -->
+          <circle cx="30" cy="30" r="18" fill="white" opacity="0.3"/>
+          <path d="M36 16 A16 16 0 1 0 36 44 A12 12 0 1 1 36 16Z" fill="white" opacity="0.8"/>
+          <!-- Warm glow = night mode -->
+          <circle cx="58" cy="20" r="10" fill="#FFD93D" opacity="0.8"/>
+          <text x="40" y="54" text-anchor="middle" font-size="9" fill="white" font-weight="700">Night Mode</text>
+        </svg>
+        <span>Mode Malam / Blue Light Filter</span>
+      </div>
+      <div class="tip-card-body">
+        <p>Aktifkan <strong>Night Mode</strong> atau <strong>Blue Light Filter</strong> saat menggunakan perangkat di malam hari. Pengaturan ini membantu meningkatkan kenyamanan sebelum tidur dan mengurangi paparan cahaya biru yang menekan produksi melatonin, hormon tidur alami tubuh.</p>
+        <div class="tip-src">📌 <a href="https://www.sleepfoundation.org/bedroom-environment/blue-light" target="_blank" class="src-link">Sleep Research Society</a> · <a href="https://www.sleepfoundation.org/" target="_blank" class="src-link">Sleep Foundation</a></div>
+      </div>
+    </div>
+
+    <div class="tip-card reveal">
+      <div class="tip-card-header tc3">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" width="80">
+          <!-- Bed/sleep icon -->
+          <rect x="10" y="30" width="60" height="22" rx="4" fill="white" opacity="0.8"/>
+          <rect x="14" y="22" width="20" height="12" rx="4" fill="white" opacity="0.6"/>
+          <!-- Phone crossed out -->
+          <rect x="52" y="10" width="16" height="22" rx="3" fill="white" opacity="0.4"/>
+          <line x1="50" y1="8" x2="70" y2="34" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <line x1="70" y1="8" x2="50" y2="34" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Screen-Free Sebelum Tidur</span>
+      </div>
+      <div class="tip-card-body">
+        <p>Memberi jeda dari layar sebelum tidur membantu tubuh lebih siap beristirahat dan menjaga kualitas tidur tetap baik. Coba ganti kebiasaan scrolling malam dengan membaca buku fisik, journaling, atau aktivitas ringan lainnya agar tubuh bisa memasuki fase istirahat secara alami.</p>
+        <div class="tip-src">📌 <a href="https://www.who.int/docs/default-source/physical-activity/call-to-action/guidelines-5-17years.pdf" target="_blank" class="src-link">WHO (2019)</a> · <a href="https://www.sleephealthjournal.org/" target="_blank" class="src-link">Sleep Health Journal (2020)</a></div>
+      </div>
+    </div>
+
+    <div class="tip-card reveal">
+      <div class="tip-card-header tc4">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" width="80">
+          <!-- Sun + lightbulb = brightness -->
+          <circle cx="40" cy="28" r="16" fill="white" opacity="0.9"/>
+          <circle cx="40" cy="28" r="10" fill="#FFD93D" opacity="0.8"/>
+          <!-- Rays -->
+          <line x1="40" y1="8"  x2="40" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="40" y1="42" x2="40" y2="48" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="28" x2="26" y2="28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="54" y1="28" x2="60" y2="28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="26" y1="14" x2="30" y2="18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="50" y1="38" x2="54" y2="42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <!-- Slider -->
+          <rect x="15" y="50" width="50" height="6" rx="3" fill="white" opacity="0.5"/>
+          <circle cx="42" cy="53" r="5" fill="white"/>
+        </svg>
+        <span>Sesuaikan Kecerahan Layar</span>
+      </div>
+      <div class="tip-card-body">
+        <p>Sesuaikan kecerahan layar dengan pencahayaan ruangan di sekitarmu. Layar yang terlalu terang atau terlalu redup dibandingkan lingkungan sekitar dapat membuat mata lelah lebih cepat. Gunakan fitur <strong>auto-brightness</strong> untuk penyesuaian otomatis sepanjang hari.</p>
+        <div class="tip-src">📌 <a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" class="src-link">American Optometric Association (AOA)</a></div>
+      </div>
+    </div>
+
+    <div class="tip-card reveal">
+      <div class="tip-card-header tc5">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" width="80">
+          <!-- Eye blinking -->
+          <ellipse cx="40" cy="28" rx="28" ry="16" fill="none" stroke="white" stroke-width="3"/>
+          <circle cx="40" cy="28" r="10" fill="white" opacity="0.8"/>
+          <circle cx="40" cy="28" r="5" fill="#45B7D1"/>
+          <!-- Water drop -->
+          <path d="M65 12 C65 12 61 19 61 22 C61 25 63 27 65 27 C67 27 69 25 69 22 C69 19 65 12 65 12Z" fill="white" opacity="0.8"/>
+          <!-- X2 label = more blinks -->
+          <text x="10" y="52" font-size="10" fill="white" font-weight="700">5x/mnt</text>
+          <text x="32" y="52" font-size="9" fill="white">ke 15x/mnt</text>
+        </svg>
+        <span>Kedip Lebih Sering &amp; Sadar</span>
+      </div>
+      <div class="tip-card-body">
+        <p>Saat fokus menatap layar, frekuensi berkedip sering menurun tanpa kita sadari. Berkedip secara sadar dapat membantu menjaga kelembapan mata sehingga mengurangi rasa kering dan tidak nyaman. Biasakan untuk mengingatkan diri berkedip secara teratur, terutama saat sesi belajar online yang panjang.</p>
+        <div class="tip-src">📌 <a href="https://eyewiki.aao.org/Computer_Vision_Syndrome" target="_blank" class="src-link">AAO EyeWiki</a> · <a href="https://www.aao.org/" target="_blank" class="src-link">American Academy of Ophthalmology</a></div>
+      </div>
+    </div>
+
+    <div class="tip-card reveal">
+      <div class="tip-card-header tc6">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" width="80">
+          <!-- Phone with timer -->
+          <rect x="25" y="6" width="30" height="48" rx="5" fill="white" opacity="0.8"/>
+          <rect x="28" y="12" width="24" height="32" rx="3" fill="#4ECDC4" opacity="0.4"/>
+          <!-- Bar chart on screen -->
+          <rect x="30" y="38" width="5" height="6" rx="1" fill="#FF6B6B"/>
+          <rect x="37" y="30" width="5" height="14" rx="1" fill="#FFD93D"/>
+          <rect x="44" y="22" width="5" height="22" rx="1" fill="#4ECDC4"/>
+          <!-- Clock icon -->
+          <circle cx="64" cy="16" r="10" fill="#FFD93D" opacity="0.9"/>
+          <line x1="64" y1="10" x2="64" y2="16" stroke="white" stroke-width="1.5"/>
+          <line x1="64" y1="16" x2="69" y2="19" stroke="white" stroke-width="1.5"/>
+        </svg>
+        <span>Pantau & Batasi Screen Time</span>
+      </div>
+      <div class="tip-card-body">
+        <p>Mata lebih cepat lelah dan tidak nyaman ketika layar digunakan terlalu lama tanpa jeda. Pantau penggunaan perangkat setiap hari menggunakan fitur <strong>Screen Time</strong> di iOS atau <strong>Digital Wellbeing</strong> di Android, dan sisipkan waktu istirahat secara berkala. Terapkan aturan 20–20–20 untuk memberi mata kesempatan pulih di sela-sela aktivitas digital.</p>
+        <div class="tip-src">📌 <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" class="src-link">WHO (2019)</a> · <a href="https://prioritas.bca.co.id/en/Berita/Lifestyle/2024/03/28/03/51/yuk-rawat-kesehatan-mata-produktivitas-hidup-akan-terjaga" target="_blank" class="src-link">dr. Kevin SpM / KMN EyeCare via BCA Prioritas (2024)</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Outdoor bonus tip -->
+  <div class="bonus-tip reveal">
+    <div class="bonus-icon">
+      <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" width="70">
+        <circle cx="35" cy="35" r="32" fill="#E8FAF9"/>
+        <circle cx="35" cy="22" r="14" fill="#FFD93D" opacity="0.9"/>
+        <!-- Sun rays -->
+        <line x1="35" y1="4"  x2="35" y2="10" stroke="#FFD93D" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="56" y1="14" x2="52" y2="18" stroke="#FFD93D" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="14" x2="18" y2="18" stroke="#FFD93D" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Grass/ground -->
+        <path d="M10 50 Q20 38 35 44 Q50 38 60 50 L60 60 L10 60Z" fill="#4ECDC4" opacity="0.7"/>
+        <!-- Child running -->
+        <circle cx="35" cy="48" r="5" fill="#FF6B6B"/>
+        <path d="M35 53 L32 62 M35 53 L38 62" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"/>
+        <path d="M35 56 L30 52 M35 56 L40 53" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="bonus-text">
+      <h4>🌿 Bonus: Sisihkan Waktu untuk Kegiatan di Luar Ruangan</h4>
+      <p>Menghabiskan waktu di luar ruangan tidak hanya membantu tubuh tetap aktif, tetapi juga membantu mata melihat objek dari jarak yang lebih beragam, yang sangat mendukung kesehatan penglihatan jangka panjang. Cahaya alami dan pemandangan jauh terbukti membantu memperlambat perkembangan miopia pada anak dan remaja.</p>
+      <div class="tip-src">📌 <a href="https://www.aao.org/eye-health/tips-prevention/children-and-screen-time" target="_blank" class="src-link">Ophthalmology Journal (AAO)</a> · <a href="https://www.aao.org/eye-health/tips-prevention/children-and-screen-time" target="_blank" class="src-link">AAO Screen Use for Kids (2024)</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TANDA BAHAYA ===== -->
+<section class="section danger-section" id="bahaya">
+  <div class="section-label danger-lbl">🚨 Kapan Harus Waspada?</div>
+  <h2 class="section-title">Tanda <span class="text-accent-red">Bahaya</span> yang Harus Dikenali</h2>
+  <p class="section-desc">Tidak semua keluhan mata setelah menggunakan layar berarti masalah yang serius. Namun, ada beberapa gejala yang sebaiknya tidak diabaikan karena bisa menjadi tanda bahwa mata membutuhkan pemeriksaan lebih lanjut. Mengenali perbedaannya sejak dini dapat membantu menjaga kesehatan penglihatan jangka panjang.</p>
+
+  <div class="danger-grid">
+    <div class="danger-card dc-red reveal">
+      <div class="dc-header">
+        <div class="dc-dot red-dot"></div>
+        <span>SEGERA KE DOKTER MATA</span>
+      </div>
+      <ul>
+        <li>👁️ Penglihatan tiba-tiba menjadi buram, sebagian, atau sulit melihat dengan jelas</li>
+        <li>⚡ Muncul kilatan cahaya atau titik-titik mengambang yang baru pertama kali terlihat</li>
+        <li>🔴 Mata merah disertai rasa nyeri hebat atau sangat sensitif terhadap cahaya</li>
+        <li>💧 Keluar cairan yang tidak biasa dari mata</li>
+        <li>🌑 Terasa seperti ada bagian penglihatan yang tertutup atau terhalang</li>
+      </ul>
+    </div>
+    <div class="danger-card dc-yellow reveal">
+      <div class="dc-header">
+        <div class="dc-dot yellow-dot"></div>
+        <span>SEBAIKNYA KONSULTASI KE DOKTER</span>
+      </div>
+      <ul>
+        <li>😵 Sakit kepala yang sering muncul saat atau setelah menggunakan layar</li>
+        <li>🌫️ Penglihatan buram yang tidak membaik setelah beristirahat</li>
+        <li>😢 Mata sering berair atau terasa sangat kering tanpa alasan yang jelas</li>
+        <li>🥵 Mata terasa panas atau terbakar dan bertahan cukup lama setelah berhenti menggunakan layar</li>
+        <li>🔍 Mulai perlu mendekatkan benda atau layar untuk bisa melihat lebih jelas</li>
+      </ul>
+    </div>
+    <div class="danger-card dc-green reveal">
+      <div class="dc-header">
+        <div class="dc-dot green-dot"></div>
+        <span>BISA DIATASI DENGAN KEBIASAAN SEHAT</span>
+      </div>
+      <ul>
+        <li>😪 Mata terasa lelah setelah belajar atau aktivitas online yang panjang</li>
+        <li>😖 Mata sedikit kering setelah lama menatap layar tanpa jeda</li>
+        <li>🥴 Pusing ringan yang membaik setelah beristirahat</li>
+        <li>😶 Sulit fokus di akhir hari setelah banyak menggunakan perangkat digital</li>
+        <li>😑 Mata terasa berat atau mengantuk setelah terlalu lama menatap layar</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="checkup-banner reveal">
+    <div class="checkup-illo">
+      <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg" width="100">
+        <!-- Doctor figure -->
+        <circle cx="50" cy="20" r="16" fill="#FF85A1"/>
+        <rect x="34" y="36" width="32" height="36" rx="8" fill="white" stroke="#4ECDC4" stroke-width="2"/>
+        <!-- Stethoscope -->
+        <path d="M44 50 Q44 62 56 62 Q68 62 68 50" stroke="#4ECDC4" stroke-width="2.5" fill="none"/>
+        <circle cx="44" cy="48" r="4" fill="#4ECDC4"/>
+        <!-- Doctor cross on shirt -->
+        <rect x="47" y="44" width="6" height="14" rx="2" fill="#FF6B6B"/>
+        <rect x="44" y="47" width="12" height="6" rx="2" fill="#FF6B6B"/>
+        <!-- Eyes of doctor -->
+        <circle cx="44" cy="18" r="3" fill="white"/>
+        <circle cx="56" cy="18" r="3" fill="white"/>
+        <circle cx="44" cy="18" r="1.5" fill="#1a1a2e"/>
+        <circle cx="56" cy="18" r="1.5" fill="#1a1a2e"/>
+        <!-- Smile -->
+        <path d="M44 26 Q50 30 56 26" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="checkup-text">
+      <h4>Periksa Mata Secara Rutin Minimal 1x Setahun</h4>
+      <p>American Academy of Ophthalmology (AAO) menganjurkan pemeriksaan mata menyeluruh secara teratur, terutama bagi yang sering menggunakan perangkat digital. Data WHO (2023) menunjukkan bahwa deteksi dini gangguan penglihatan dapat mencegah atau memperbaiki hampir <strong>50% kasus di seluruh dunia</strong>. Jangan tunggu hingga ada keluhan yang mengganggu, pencegahan selalu jauh lebih baik daripada pengobatan. (Kompas.id, 2024)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUIZ ===== -->
+<section class="section quiz-section" id="quiz">
+  <div class="section-label">🧠 Cek Dirimu!</div>
+  <h2 class="section-title">Quiz: <span class="text-accent">Seberapa Sehat Matamu?</span></h2>
+  <p class="section-desc">Jawab 5 pertanyaan ini dengan jujur. Hasilnya berdasarkan indikator kesehatan mata digital dari AOA dan AAO.</p>
+  <div class="quiz-wrap">
+    <div class="qprog-bar"><div class="qprog-fill" id="qprogFill"></div></div>
+    <div class="qprog-label" id="qprogLabel">Pertanyaan 1 dari 5</div>
+    <div class="quiz-card" id="quizCard">
+      <div class="quiz-q" id="quizQ"></div>
+      <div class="quiz-opts" id="quizOpts"></div>
+    </div>
+    <div class="quiz-result" id="quizResult" style="display:none">
+      <div class="result-emoji" id="rEmoji"></div>
+      <h3 id="rTitle"></h3>
+      <p id="rDesc"></p>
+      <div class="rscore-bar"><div class="rscore-fill" id="rFill"></div></div>
+      <p class="rscore-txt" id="rScoreTxt"></p>
+      <button class="btn btn-primary" id="quizRetry">Coba Lagi 🔄</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:12px">
+        <div class="logo-icon">👁️</div>
+        <span class="logo-text">EyeSmart</span>
+      </div>
+      <p>Panduan kesehatan mata digital berbasis sumber terverifikasi untuk remaja Indonesia. Jaga matamu, raih mimpimu! 🚀</p>
+    </div>
+    <div class="footer-nav">
+      <h5>Navigasi</h5>
+      <ul>
+        <li><a href="#kasus">Kasus Nyata</a></li>
+        <li><a href="#masalah">Dampak Layar</a></li>
+        <li><a href="#aturan20">Aturan 20-20-20</a></li>
+        <li><a href="#tips">Tips Screen Time</a></li>
+        <li><a href="#bahaya">Tanda Bahaya</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+    </div>
+    <div class="footer-sources">
+      <h5>Sumber Terverifikasi</h5>
+      <p class="footer-src-note">Website ini dibuat 2026. Sumber artikel berasal dari berbagai tahun dan tetap relevan.</p>
+      <ul>
+        <li>🏥 <a href="https://kemkes.go.id/id/sayangi-mata-anak-sedari-dini-untuk-investasi-masa-depan" target="_blank" class="footer-src-link">Kemenkes RI — Hari Penglihatan Sedunia 2024</a></li>
+        <li>🔬 <a href="https://www.aao.org/eye-health/diseases/what-is-computer-vision-syndrome" target="_blank" class="footer-src-link">AAO — American Academy of Ophthalmology</a></li>
+        <li>🔬 <a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" class="footer-src-link">AOA — American Optometric Association</a></li>
+        <li>🌐 <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" class="footer-src-link">WHO — Screen Time Guidelines (2019)</a></li>
+        <li>📰 <a href="https://www.kompas.id/artikel/kesehatan-penglihatan-untuk-indonesia-emas-2045" target="_blank" class="footer-src-link">Kompas.id — Perdami / Vision Project SPGR (2024)</a></li>
+        <li>🧬 <a href="https://primaku.com/articles/dampak-screen-time-berkepanjangan-terhadap-gangguan-mata-1739526846648" target="_blank" class="footer-src-link">PrimaKu.com — Pavel et al. (2025)</a></li>
+        <li>📊 <a href="https://thevisioncouncil.org/content/digital-eye-strain" target="_blank" class="footer-src-link">Vision Council — Digital Eye Strain Report (2024)</a></li>
+        <li>💤 <a href="https://www.sleepfoundation.org/bedroom-environment/blue-light" target="_blank" class="footer-src-link">Sleep Foundation / Sleep Research Society</a></li>
+        <li>📚 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11180963/" target="_blank" class="footer-src-link">NIH/PubMed — Digital Blindness & Screen Time (2024)</a></li>
+        <li>📖 <a href="https://www.aao.org/eye-health/tips-prevention/children-and-screen-time" target="_blank" class="footer-src-link">AAO — Screen Use for Kids & Myopia Research</a></li>
+        <li>📰 <a href="https://prioritas.bca.co.id/en/Berita/Lifestyle/2024/03/28/03/51/yuk-rawat-kesehatan-mata-produktivitas-hidup-akan-terjaga" target="_blank" class="footer-src-link">dr. Kevin SpM / KMN EyeCare — BCA Prioritas (2024)</a></li>
+        <li>🗞️ <a href="https://eyewiki.aao.org/Computer_Vision_Syndrome" target="_blank" class="footer-src-link">AAO EyeWiki — Computer Vision Syndrome</a></li>
+      </ul>
+      <p class="disclaimer">⚠️ Website ini bersifat edukatif berdasarkan sumber terverifikasi. Untuk diagnosis medis, konsultasikan ke dokter mata profesional.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 EyeSmart · Dibuat dengan ❤️ oleh <strong>Group 3 (Teen Health) </strong> · SAT Project</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
